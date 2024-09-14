@@ -34,14 +34,14 @@ while(n!=-1){
     printf("please choose(channel amount)\n ");
     
 scanf("%d %d",&n,&amount);
-if (n==-2&&time<4)
+if (n==-2&&time<3)
 {
  num[t]+=m ;
  
  sum=sum-pri;
  time++;
  printf("succeed\n");
-}else if (time>3)
+}else if (time>2)
 {
 printf("sorry,times have over\n");
 }else if (n>5)
