@@ -68,7 +68,10 @@ int pay1=0,pay2;
 int change;
     while(pay1<sum){
         scanf("%d",&pay2);
-        pay1+=pay2;
+        if (pay2!=1&&pay2!=2&&pay2!=5)
+		{  printf("wrong\n");
+		}else{
+		pay1+=pay2;}
         if (pay1-sum<0)
 		{  printf(" continue\n");  }
 		}
