@@ -6,18 +6,16 @@ int main() {
 	int price[5] ;
 	int num[5] ;
 	char ch[10] ;
-
-	while (i < 9) {
-		scanf("%c",&ch[i]);
-		if (ch[i] == 'E') {
-			scanf("%c", &ch[i+1]);
-			if (ch[i+1] == 'N') {
-				scanf("%c",&ch[i+2]);
-				goto next;
-			}
+        char end[5]={'E','N','D',0};
+	
+	while (strcmp(ch,end)!=0) {
+		scanf("%S",ch);
+		if (strcmp(ch,end)==0) {
+			continue;   
+	                }
 			else { 
 				n = (int)ch[i+1]; }
-		}
+		              }
 		scanf("%d", &n);
 		scanf("%d", &price[n -1]);
 		scanf("%d", &num[n - 1]);
@@ -34,7 +32,6 @@ int pri=0;
 
 
 char back[5]={'B','A','C','K',0};
-char end[5]={'E','N','D',0};
 char ord[5];
 begin:
 
