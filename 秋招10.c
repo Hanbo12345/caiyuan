@@ -9,7 +9,7 @@ int main() {
         char end[5]={'E','N','D',0};
 	
 	while (strcmp(ch,end)!=0) {
-		scanf("%S",ch);
+		scanf("%s",ch);
 		if (strcmp(ch,end)==0) {
 			continue;   
 	                }
