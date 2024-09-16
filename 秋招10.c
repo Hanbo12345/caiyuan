@@ -13,8 +13,7 @@ int main() {
 		if (strcmp(ch,end)==0) {
 			continue;   
 	                }
-			else 
-		       { n = (int)ch[i+1]; }
+			
 		scanf("%d", &n);
 		scanf("%d", &price[n -1]);
 		scanf("%d", &num[n - 1]);
