@@ -26,9 +26,7 @@ printf("begin,(finish click END)(back click BACK)\n");
 n=0;
 int amount;
 int sum=0;
-int t=0,m=0,time=0;
-int pri=0;
-
+int time=0;
 
 char back[5]={'B','A','C','K',0};
 char ord[5];
@@ -39,8 +37,8 @@ while(strcmp(ord,end)!=0){
     
 scanf("%s",ord);		
 	if (strcmp(ord,back)==0&&time<3){
-		num[t]+=m ;	
-		sum=sum-pri;
+		num[n-1]+=amount ;	
+		sum=sum-price[n-1]*amount;
 		time++;
 		printf("succeed\n");
 	}else if (strcmp(ord,back)==0&&time>2){
@@ -48,16 +46,13 @@ scanf("%s",ord);
 	}else if(strcmp(ord,end)==0){
 		continue;
 	}else{  scanf("%d %d",&n,&amount);
-		    m=amount;
-			t=n-1;
 			num[n-1]-=amount;
 			
 		if(num[n-1]<0){
 			num[n-1]+=amount;
 			printf("The goods are not enough\n");   
 		}else{
-			pri=price[n-1]*amount;
-				sum+=pri;
+				sum+=price[n-1]*amount;
 			}
 		}
     }
@@ -80,9 +75,9 @@ int change;
        int b;
        scanf("%d",&b);
        if (b==1)
-       {   n = 0;
-           sum=0;
+       {   sum=0;
            ord[0]='0';
+	   time=0;
            goto begin;
        }
 
