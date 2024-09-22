@@ -59,7 +59,6 @@ scanf("%s",ord);
 		}else{
 				sum+=price[n-1]*amount;
 			}
-	        time=0;
 		}
     }
 
