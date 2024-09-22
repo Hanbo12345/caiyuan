@@ -25,6 +25,7 @@ int main() {
 		scanf("%d", &price[n -1]);
 		scanf("%d", &num[n - 1]);
 		i++;
+		time=0;	
 	       }
 	}
 
@@ -58,6 +59,7 @@ scanf("%s",ord);
 		}else{
 				sum+=price[n-1]*amount;
 			}
+	        time=0;
 		}
     }
 
