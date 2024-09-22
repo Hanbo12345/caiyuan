@@ -15,6 +15,7 @@ int main() {
 		if (strcmp(ch,back)==0&&time<3){
 		price[n-1]=0;
 		num[n-1]=0;
+		time++;
 		printf("succeed\n");
 	}else if (strcmp(ch,back)==0&&time>2){
 		printf("sorry,times have over\n");
@@ -25,7 +26,6 @@ int main() {
 		scanf("%d", &price[n -1]);
 		scanf("%d", &num[n - 1]);
 		i++;
-		time=0;	
 	       }
 	}
 
